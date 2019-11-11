@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/sticky.css">
+  <title>Students</title>
+</head>
+
+<body>
+
+  <!-- Begin page content -->
+  <main role="main" class="container">
+    <h1 class="mt-5">Follow-up Students</h1>
+    <p class="lead">For EFL Students in Mega Goal 1 </p>
+    <div class="container text-right">
+      <button type="button" class="btn btn-outline-dark" id="add-group" title="add group" style="border-radius: 40%;">+</button>
+    </div>
+  </main>
+  <div class="jumbotron  Regular shadow m-5">
+    <div class="container-fluid text-center " id="main-container">
+      <h4 class="h4 mb-3">Choose Group</h4>
+      <button type="button" class="btn btn-outline-info btn-lg m-3" id="btn0">Group 2</button>
+      <button type="button" class="btn btn-outline-info btn-lg m-3" id="btn1">Group 3</button>
+      <button type="button" class="btn btn-outline-info btn-lg m-3" id="btn2">Group 4</button>
+    </div>
+    <div class="container text-center">
+      <input id="date-picker" type="date" hidden>
+
+    </div>
+    <div class="container-fluid text-center" id="students" hidden>
+
+    </div>
+  </div>
+
+  <!-- google form -->
+  <form id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdpM3DOP-ievZtvmazzP6px8SXnTfCof44820H2QrFnDSRRpg/formResponse"
+    method="POST" style="padding: 100px" target="no-target" hidden>
+    <div class="form-group">
+      <input type="text" class="form-control" name="entry.1495021055" id="student-name">
+      <input type="text" class="form-control" name="entry.1915148377" id="date">
+      <input type="text" class="form-control" name="entry.113035992" id="student-id">
+      <input type="text" class="form-control" name="entry.1507987602" id="student-group">
+      <input type="text" class="form-control" name="entry.835214011" id="student-status">
+      <input type="text" class="form-control" name="entry.579260774" id="student-participation">
+      <input type="text" class="form-control" name="entry.197716596" id="student-behavior">
+      <input type="text" class="form-control" name="entry.1407022859" id="student-home-work">
+      <input type="text" class="form-control" name="entry.225922818" id="student-tools">
+      <input type="text" class="form-control" name="entry.609156396" id="student-random">
+    </div>
+    <button type="submit" class="btn btn-primary">ارسال</button>
+  </form>
+  <iframe src="#" id="no-target" name="no-target" style="visibility: hidden;"></iframe>
+  <!-- end of form -->
+
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Done by Abdulaziz Mohammed Ahmed Albidani</span>
+    </div>
+  </footer>
+
+  <script src="js/student.js"></script>
+  <script src="js/group.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
